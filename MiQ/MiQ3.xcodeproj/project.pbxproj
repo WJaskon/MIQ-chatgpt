@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		469C80B92A1889AA007965D4 /* TalkingClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469C80B82A1889AA007965D4 /* TalkingClassifier.swift */; };
+		469C80BB2A1889D2007965D4 /* conversation detect copy 7.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 469C80BA2A1889D2007965D4 /* conversation detect copy 7.mlmodel */; };
+		469C80BD2A20A20E007965D4 /* MotionWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469C80BC2A20A20E007965D4 /* MotionWriter.swift */; };
+		4F0859A526CA832600BB16B6 /* MiQ3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0859A426CA832600BB16B6 /* MiQ3App.swift */; };
+		4F0859A726CA832600BB16B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0859A626CA832600BB16B6 /* ContentView.swift */; };
+		4F0859A926CA832800BB16B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F0859A826CA832800BB16B6 /* Assets.xcassets */; };
+		4F0859AC26CA832800BB16B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F0859AB26CA832800BB16B6 /* Preview Assets.xcassets */; };
+		4F0859E926CA83C500BB16B6 /* V2TManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0859E626CA83C500BB16B6 /* V2TManager.swift */; };
+		4F0859EA26CA83C500BB16B6 /* T2VManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0859E726CA83C500BB16B6 /* T2VManager.swift */; };
+		4F0859FB26CE36E200BB16B6 /* TranscriptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0859FA26CE36E200BB16B6 /* TranscriptionModel.swift */; };
+		4F085A2B26CE8A1100BB16B6 /* PresistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F085A2A26CE8A1100BB16B6 /* PresistenceController.swift */; };
+		4F085A2E26CE8B9E00BB16B6 /* MiQ3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4F085A2C26CE8B9E00BB16B6 /* MiQ3.xcdatamodeld */; };
+		4F49F77226CC9A9A000C30FE /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F49F77126CC9A9A000C30FE /* HistoryView.swift */; };
+		4FA956B326D266320096E25C /* WatchDataHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA956B226D266320096E25C /* WatchDataHistoryView.swift */; };
+		4FA956B526D34BC90096E25C /* TextAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA956B426D34BC90096E25C /* TextAlertView.swift */; };
+		4FD26B6826D49421004F76A3 /* siri_start.mov in Resources */ = {isa = PBXBuildFile; fileRef = 4FD26B6526D49420004F76A3 /* siri_start.mov */; };
+		4FD26B6926D49421004F76A3 /* siri_done.mov in Resources */ = {isa = PBXBuildFile; fileRef = 4FD26B6626D49421004F76A3 /* siri_done.mov */; };
+		4FD26B6A26D49421004F76A3 /* siri_end.mov in Resources */ = {isa = PBXBuildFile; fileRef = 4FD26B6726D49421004F76A3 /* siri_end.mov */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4F0859DB26CA832900BB16B6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		469C80B82A1889AA007965D4 /* TalkingClassifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TalkingClassifier.swift; path = ../../../deviceMotion/TalkingClassifier.swift; sourceTree = "<group>"; };
+		469C80BA2A1889D2007965D4 /* conversation detect copy 7.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = "conversation detect copy 7.mlmodel"; path = "../../../../2_earableAI/earableAIassistant/earableAIassistant/conversation detect copy 7.mlmodel"; sourceTree = "<group>"; };
+		469C80BC2A20A20E007965D4 /* MotionWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionWriter.swift; sourceTree = "<group>"; };
+		4F0859A126CA832600BB16B6 /* MiQ3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiQ3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F0859A426CA832600BB16B6 /* MiQ3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiQ3App.swift; sourceTree = "<group>"; };
+		4F0859A626CA832600BB16B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4F0859A826CA832800BB16B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F0859AB26CA832800BB16B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4F0859AD26CA832800BB16B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F0859E626CA83C500BB16B6 /* V2TManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2TManager.swift; sourceTree = "<group>"; };
+		4F0859E726CA83C500BB16B6 /* T2VManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T2VManager.swift; sourceTree = "<group>"; };
+		4F0859F526CA925E00BB16B6 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.4.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		4F0859FA26CE36E200BB16B6 /* TranscriptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptionModel.swift; sourceTree = "<group>"; };
+		4F085A2A26CE8A1100BB16B6 /* PresistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresistenceController.swift; sourceTree = "<group>"; };
+		4F085A2D26CE8B9E00BB16B6 /* MiQ.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MiQ.xcdatamodel; sourceTree = "<group>"; };
+		4F49F77126CC9A9A000C30FE /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		4FA956B226D266320096E25C /* WatchDataHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchDataHistoryView.swift; sourceTree = "<group>"; };
+		4FA956B426D34BC90096E25C /* TextAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAlertView.swift; sourceTree = "<group>"; };
+		4FD26B6526D49420004F76A3 /* siri_start.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = siri_start.mov; sourceTree = "<group>"; };
+		4FD26B6626D49421004F76A3 /* siri_done.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = siri_done.mov; sourceTree = "<group>"; };
+		4FD26B6726D49421004F76A3 /* siri_end.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = siri_end.mov; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F08599E26CA832600BB16B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		469C80B72A188976007965D4 /* TalkingClassifier */ = {
+			isa = PBXGroup;
+			children = (
+				469C80BA2A1889D2007965D4 /* conversation detect copy 7.mlmodel */,
+				469C80B82A1889AA007965D4 /* TalkingClassifier.swift */,
+				469C80BC2A20A20E007965D4 /* MotionWriter.swift */,
+			);
+			path = TalkingClassifier;
+			sourceTree = "<group>";
+		};
+		4F08599826CA832600BB16B6 = {
+			isa = PBXGroup;
+			children = (
+				4F0859A326CA832600BB16B6 /* MiQ3 */,
+				4F0859A226CA832600BB16B6 /* Products */,
+				4F0859F426CA925E00BB16B6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4F0859A226CA832600BB16B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F0859A126CA832600BB16B6 /* MiQ3.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F0859A326CA832600BB16B6 /* MiQ3 */ = {
+			isa = PBXGroup;
+			children = (
+				469C80B72A188976007965D4 /* TalkingClassifier */,
+				4F206B3E26D1F36F00F49A7A /* manager */,
+				4F206B3F26D1F38100F49A7A /* model */,
+				4F0859A426CA832600BB16B6 /* MiQ3App.swift */,
+				4F206B4026D1F39900F49A7A /* view */,
+				4F206B4126D1F3D700F49A7A /* database */,
+				4F0859A826CA832800BB16B6 /* Assets.xcassets */,
+				4FD26B6B26D49427004F76A3 /* sound */,
+				4F0859AD26CA832800BB16B6 /* Info.plist */,
+				4F0859AA26CA832800BB16B6 /* Preview Content */,
+			);
+			path = MiQ3;
+			sourceTree = "<group>";
+		};
+		4F0859AA26CA832800BB16B6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4F0859AB26CA832800BB16B6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4F0859F426CA925E00BB16B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F0859F526CA925E00BB16B6 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F206B3E26D1F36F00F49A7A /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				4F0859E626CA83C500BB16B6 /* V2TManager.swift */,
+				4F0859E726CA83C500BB16B6 /* T2VManager.swift */,
+			);
+			path = manager;
+			sourceTree = "<group>";
+		};
+		4F206B3F26D1F38100F49A7A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				4F0859FA26CE36E200BB16B6 /* TranscriptionModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		4F206B4026D1F39900F49A7A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				4F0859A626CA832600BB16B6 /* ContentView.swift */,
+				4F49F77126CC9A9A000C30FE /* HistoryView.swift */,
+				4FA956B226D266320096E25C /* WatchDataHistoryView.swift */,
+				4FA956B426D34BC90096E25C /* TextAlertView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		4F206B4126D1F3D700F49A7A /* database */ = {
+			isa = PBXGroup;
+			children = (
+				4F085A2A26CE8A1100BB16B6 /* PresistenceController.swift */,
+				4F085A2C26CE8B9E00BB16B6 /* MiQ3.xcdatamodeld */,
+			);
+			path = database;
+			sourceTree = "<group>";
+		};
+		4FD26B6B26D49427004F76A3 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				4FD26B6626D49421004F76A3 /* siri_done.mov */,
+				4FD26B6726D49421004F76A3 /* siri_end.mov */,
+				4FD26B6526D49420004F76A3 /* siri_start.mov */,
+			);
+			path = sound;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F0859A026CA832600BB16B6 /* MiQ3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F0859DC26CA832900BB16B6 /* Build configuration list for PBXNativeTarget "MiQ3" */;
+			buildPhases = (
+				4F08599D26CA832600BB16B6 /* Sources */,
+				4F08599E26CA832600BB16B6 /* Frameworks */,
+				4F08599F26CA832600BB16B6 /* Resources */,
+				4F0859DB26CA832900BB16B6 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiQ3;
+			productName = MiQ3;
+			productReference = 4F0859A126CA832600BB16B6 /* MiQ3.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F08599926CA832600BB16B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					4F0859A026CA832600BB16B6 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 4F08599C26CA832600BB16B6 /* Build configuration list for PBXProject "MiQ3" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F08599826CA832600BB16B6;
+			productRefGroup = 4F0859A226CA832600BB16B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F0859A026CA832600BB16B6 /* MiQ3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F08599F26CA832600BB16B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FD26B6A26D49421004F76A3 /* siri_end.mov in Resources */,
+				4FD26B6826D49421004F76A3 /* siri_start.mov in Resources */,
+				4FD26B6926D49421004F76A3 /* siri_done.mov in Resources */,
+				4F0859AC26CA832800BB16B6 /* Preview Assets.xcassets in Resources */,
+				4F0859A926CA832800BB16B6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F08599D26CA832600BB16B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F0859FB26CE36E200BB16B6 /* TranscriptionModel.swift in Sources */,
+				469C80BD2A20A20E007965D4 /* MotionWriter.swift in Sources */,
+				469C80B92A1889AA007965D4 /* TalkingClassifier.swift in Sources */,
+				4F085A2E26CE8B9E00BB16B6 /* MiQ3.xcdatamodeld in Sources */,
+				4F49F77226CC9A9A000C30FE /* HistoryView.swift in Sources */,
+				4F0859E926CA83C500BB16B6 /* V2TManager.swift in Sources */,
+				4FA956B326D266320096E25C /* WatchDataHistoryView.swift in Sources */,
+				4FA956B526D34BC90096E25C /* TextAlertView.swift in Sources */,
+				4F0859A726CA832600BB16B6 /* ContentView.swift in Sources */,
+				469C80BB2A1889D2007965D4 /* conversation detect copy 7.mlmodel in Sources */,
+				4F0859A526CA832600BB16B6 /* MiQ3App.swift in Sources */,
+				4F0859EA26CA83C500BB16B6 /* T2VManager.swift in Sources */,
+				4F085A2B26CE8A1100BB16B6 /* PresistenceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4F0859D226CA832900BB16B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4F0859D326CA832900BB16B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4F0859DD26CA832900BB16B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MiQ3/Preview Content\"";
+				DEVELOPMENT_TEAM = 7VT3JD6TFH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MiQ3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MiQ3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F0859DE26CA832900BB16B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MiQ3/Preview Content\"";
+				DEVELOPMENT_TEAM = 7VT3JD6TFH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MiQ3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MiQ3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F08599C26CA832600BB16B6 /* Build configuration list for PBXProject "MiQ3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F0859D226CA832900BB16B6 /* Debug */,
+				4F0859D326CA832900BB16B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F0859DC26CA832900BB16B6 /* Build configuration list for PBXNativeTarget "MiQ3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F0859DD26CA832900BB16B6 /* Debug */,
+				4F0859DE26CA832900BB16B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4F085A2C26CE8B9E00BB16B6 /* MiQ3.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4F085A2D26CE8B9E00BB16B6 /* MiQ.xcdatamodel */,
+			);
+			currentVersion = 4F085A2D26CE8B9E00BB16B6 /* MiQ.xcdatamodel */;
+			path = MiQ3.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4F08599926CA832600BB16B6 /* Project object */;
+}

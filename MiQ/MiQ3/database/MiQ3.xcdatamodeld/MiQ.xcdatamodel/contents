@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20F71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="EntityExerciseSession" representedClassName="EntityExerciseSession" syncable="YES" codeGenerationType="class">
+        <attribute name="created_at" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="end_at" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="modified_at" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="note" optional="YES" attributeType="String"/>
+        <attribute name="start_at" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="timestamp" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="voice_memos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EntityVoiceMemo" inverseName="exercise_session" inverseEntity="EntityVoiceMemo"/>
+    </entity>
+    <entity name="EntityTranscription" representedClassName="EntityTranscription" syncable="YES" codeGenerationType="class">
+        <attribute name="created_at" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="formatted_string" optional="YES" attributeType="String"/>
+        <attribute name="modified_at" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="segments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EntityTranscriptionSegment" inverseName="transcription" inverseEntity="EntityTranscriptionSegment"/>
+        <relationship name="voice_memo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EntityVoiceMemo" inverseName="transcriptions" inverseEntity="EntityVoiceMemo"/>
+    </entity>
+    <entity name="EntityTranscriptionSegment" representedClassName="EntityTranscriptionSegment" syncable="YES" codeGenerationType="class">
+        <attribute name="confidence" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="created_at" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="duration" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="range_length" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="range_location" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="substring" optional="YES" attributeType="String"/>
+        <attribute name="timestamp" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="transcription" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EntityTranscription" inverseName="segments" inverseEntity="EntityTranscription"/>
+    </entity>
+    <entity name="EntityVoiceMemo" representedClassName="EntityVoiceMemo" syncable="YES" codeGenerationType="class">
+        <attribute name="best_transcription" optional="YES" attributeType="String"/>
+        <attribute name="created_at" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="modified_at" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="note" optional="YES" attributeType="String"/>
+        <attribute name="raw_audio" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="value" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="exercise_session" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EntityExerciseSession" inverseName="voice_memos" inverseEntity="EntityExerciseSession"/>
+        <relationship name="transcriptions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EntityTranscription" inverseName="voice_memo" inverseEntity="EntityTranscription"/>
+    </entity>
+    <entity name="EntityWatchRawData" representedClassName="EntityWatchRawData" syncable="YES" codeGenerationType="class">
+        <attribute name="created_at" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="modified_at" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="raw_data" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="EntityExerciseSession" positionX="-54" positionY="72" width="128" height="134"/>
+        <element name="EntityTranscription" positionX="-63" positionY="45" width="128" height="104"/>
+        <element name="EntityTranscriptionSegment" positionX="-54" positionY="27" width="128" height="149"/>
+        <element name="EntityVoiceMemo" positionX="-63" positionY="-18" width="128" height="194"/>
+        <element name="EntityWatchRawData" positionX="-36" positionY="90" width="128" height="74"/>
+    </elements>
+</model>
